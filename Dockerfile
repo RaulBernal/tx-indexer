@@ -19,3 +19,4 @@ FROM alpine
 COPY --from=builder /app/indexer /usr/local/bin/indexer
 
 ENTRYPOINT [ "/usr/local/bin/indexer" ]
+EXPOSE      8546 
